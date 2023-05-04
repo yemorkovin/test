@@ -3,7 +3,7 @@ require_once "header.php";
 require_once "config.php";
 
 $r = new DB();
-$res = $r->conn->query("select * from news limit 3");
+$res = $r->conn->query("select * from news ORDER BY date DESC limit 3");
 ?>
 <div class="flex-container column">
 <?php 
